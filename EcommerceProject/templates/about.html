@@ -1,0 +1,46 @@
+{% extends "home.html" %}
+{% load static %}
+{% block title %} About {% endblock title %}
+
+{% block banner %}
+<div class="carousel slide" data-ride="carousel" id="carouselExampleSlidesOnly">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img alt="banner images" class="d-block w-100" src="{% static 'images/banner/b1.jpg' %}">
+        </div>
+        <div class="carousel-item">
+            <img alt="banner images" class="d-block w-100" src="{% static 'images/banner/b2.jpg' %}">
+        </div>
+        <div class="carousel-item">
+            <img alt="banner images" class="d-block w-100" src="{% static 'images/banner/b3.jpg' %}">
+        </div>
+        <div class="carousel-item">
+            <img alt="banner images" class="d-block w-100" src="{% static 'images/banner/b4.jpg' %}">
+        </div>
+    </div>
+</div>
+{% endblock banner %}
+{% block main %}
+<div class="container mt-3">
+    <br>
+    <h2 class="text-center">About us</h2>
+    <br>
+    <div class="row-container">
+        <p class="fs-4 text-center"> This is a public limited company having its
+            registered and Andhra Pradesh state in India. The company was incorporated
+            in year of 2023 and production commenced in year of 2025.
+            This is one of the fastest growing public Listed Companies in andhra pradesh.
+        </p>
+    </div>
+    <br><br>
+    <h2 class="text-center">Our Vision</h2>
+    <br>
+    <div class="row-container"> To embrace the right technology to delight our customers
+        Empowering the farmers community through our unique 'Relationship Farming' Model
+        To anticipate, understand and respond to our Customers' needs by creating high-quality
+        products and making them available through innovative and convenient channels.
+    </div>
+
+</div>
+<br><br>
+{% endblock %}
